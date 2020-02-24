@@ -1,13 +1,16 @@
 {
   "name": "ember-progress-bars",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.0-beta",
+  "description": "A simple Ember.js progress bar",
   "keywords": [
+    "progress",
+    "progress bar",
+    "progress bars",
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "https://github.com/dnstld/ember-progress-bars",
   "license": "MIT",
-  "author": "",
+  "author": "Denis Toledo <hi@denistoledo.dev>",
   "directories": {
     "doc": "doc",
     "test": "tests"
