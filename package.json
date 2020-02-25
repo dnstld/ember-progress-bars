@@ -1,11 +1,13 @@
 {
   "name": "ember-progress-bars",
-  "version": "1.0.0-beta-03",
+  "version": "1.0.0-beta-04",
   "description": "A simple Ember.js progress bar",
   "keywords": [
     "progress",
     "progress bar",
     "progress bars",
+    "ui element",
+    "ui elements",
     "ember-addon"
   ],
   "repository": "https://github.com/dnstld/ember-progress-bars",
@@ -27,7 +29,8 @@
     "ember-cli-babel": "^7.13.0",
     "ember-cli-htmlbars": "^4.2.0",
     "ember-cli-sass": "^10.0.1",
-    "sass": "^1.25.0"
+    "sass": "^1.25.0",
+    "ember-classic-decorator": "^1.0.7"
   },
   "devDependencies": {
     "@ember/optional-features": "^1.1.0",
