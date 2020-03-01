@@ -14,7 +14,6 @@ module.exports = {
     'scss/at-rule-no-unknown': true,
 
     // Config
-    'allowDynamicStyles': true,
     'string-quotes': 'double',
     'function-url-quotes': 'always',
     'color-hex-length': 'long',
