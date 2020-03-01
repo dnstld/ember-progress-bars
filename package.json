@@ -20,23 +20,31 @@
   "scripts": {
     "build": "ember build",
     "lint:hbs": "ember-template-lint .",
+    "lint:styles": "stylelint addon/styles/**/*.scss",
     "lint:js": "eslint .",
+    "lint:all": "concurrently 'npm run lint:js -- --quiet' 'npm run lint:hbs' 'npm run lint:styles'",
     "start": "ember serve",
     "test": "ember test",
     "test:all": "ember try:each"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint:all"
+    }
+  },
   "dependencies": {
+    "ember-classic-decorator": "^1.0.7",
     "ember-cli-babel": "^7.13.0",
     "ember-cli-htmlbars": "^4.2.0",
     "ember-cli-sass": "^10.0.1",
-    "sass": "^1.25.0",
-    "ember-classic-decorator": "^1.0.7"
+    "sass": "^1.25.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^1.1.0",
     "@glimmer/component": "^1.0.0",
     "babel-eslint": "^10.0.3",
     "broccoli-asset-rev": "^3.0.0",
+    "concurrently": "^5.1.0",
     "ember-auto-import": "^1.5.3",
     "ember-cli": "~3.15.2",
     "ember-cli-dependency-checker": "^3.2.0",
@@ -56,8 +64,16 @@
     "ember-try": "^1.4.0",
     "eslint-plugin-ember": "^7.7.1",
     "eslint-plugin-node": "^10.0.0",
+    "husky": "^4.2.3",
     "loader.js": "^4.7.0",
-    "qunit-dom": "^0.9.2"
+    "qunit-dom": "^0.9.2",
+    "stylelint": "^13.2.0",
+    "stylelint-a11y": "^1.2.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-high-performance-animation": "^1.4.0",
+    "stylelint-order": "^4.0.0",
+    "stylelint-scss": "^3.14.2",
+    "stylelint-selector-bem-pattern": "^2.1.0"
   },
   "engines": {
     "node": "8.* || >= 10.*"

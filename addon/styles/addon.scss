@@ -8,8 +8,8 @@ $progress-bars__bar-duration: .3s !default;
 $progress-bars__bar-timing: ease-in-out !default;
 
 .progress-bars {
-  background-color: $progress-bars-background ;
-  border-radius: $progress-bars-radius ;
+  background-color: $progress-bars-background;
+  border-radius: $progress-bars-radius;
   height: $progress-bars-height;
   overflow: hidden;
   width: 100%;
@@ -22,6 +22,12 @@ $progress-bars__bar-timing: ease-in-out !default;
 
     &--secondary {
       background-color: $progress-bars__bar-secondary;
+    }
+  }
+
+  @media screen and (prefers-reduced-motion) {
+    &__bar {
+      transition: none;
     }
   }
 }
