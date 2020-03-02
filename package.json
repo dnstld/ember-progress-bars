@@ -20,7 +20,7 @@
   "scripts": {
     "build": "ember build",
     "lint:hbs": "ember-template-lint .",
-    "lint:styles": "stylelint addon/styles/**/*.scss",
+    "lint:styles": "stylelint app/styles/**/*.scss",
     "lint:js": "eslint .",
     "lint:all": "concurrently 'npm run lint:js -- --quiet' 'npm run lint:hbs' 'npm run lint:styles'",
     "start": "ember serve",
