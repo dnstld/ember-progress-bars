@@ -1,7 +1,7 @@
-ember-progress-bars
+[wip] ember-progress-bars[![Build Status](https://travis-ci.org/dnstld/ember-progress-bars.svg?branch=master)](https://travis-ci.org/dnstld/ember-progress-bars) [![npm](https://img.shields.io/npm/v/ember-progress-bars.svg)](https://www.npmjs.com/package/ember-progress-bars) [![Ember Observer Score](http://emberobserver.com/badges/ember-progress-bars.svg)](http://emberobserver.com/addons/ember-progress-bars)
 ==============================================================================
 
-[Short description of the addon.]
+A simple Ember.js progress bar.
 
 
 Compatibility
