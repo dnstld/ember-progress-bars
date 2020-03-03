@@ -61,13 +61,17 @@ The options are:
 
 Defines the progress value
 
+`<ProgressBars @value={{50}} />`
+
 #### `secondary`
 
-| Type   | Default |
-|--------|---------|
-| Number | 0       |
+| Type    | Default |
+|---------|---------|
+| Boolean | 0       |
 
-Defines the progress type
+Defines the progress bar color to `#6B7F94`
+
+`<ProgressBars @secondary={{true}} />`
 
 Contributing
 ------------------------------------------------------------------------------
