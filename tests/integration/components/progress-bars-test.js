@@ -18,8 +18,8 @@ module('Integration | Component | progress-bars', function(hooks) {
     assert.dom('#progress-bars__bar').doesNotHaveClass('progress-bars__bar--secondary');
   });
 
-  test('should render with value equal 50', async function(assert) {
-    await render(hbs`<ProgressBars @value={{50}} />`);
+  test('should render with progress value equal 50', async function(assert) {
+    await render(hbs`<ProgressBars @progress={{50}} />`);
 
     assert.dom('#progress-bars__bar').hasAttribute('aria-valuenow', '50');
   });

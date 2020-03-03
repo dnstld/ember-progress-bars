@@ -4,10 +4,10 @@ import { tracked } from "@glimmer/tracking";
 export default class ProgressBarsComponent extends Component {
   tagName = '';
 
-  @tracked value = this.args.value || 0;
+  @tracked progress = this.args.progress || 0;
 
   get translateX() {
-    let translateValue = 100 - this.value;
+    let translateValue = 100 - this.progress;
     return `transform: translateX(-${translateValue}%)`;
   }
 }

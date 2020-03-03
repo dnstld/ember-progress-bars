@@ -53,7 +53,7 @@ Options
 
 The options are:
 
-#### `value`
+#### `progress`
 
 | Type   | Default |
 |--------|---------|
@@ -61,7 +61,7 @@ The options are:
 
 Defines the progress value
 
-`<ProgressBars @value={{50}} />`
+`<ProgressBars @progress={{50}} />`
 
 #### `secondary`
 
