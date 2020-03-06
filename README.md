@@ -7,7 +7,7 @@ A simple Ember.js progress bar.
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember.js v3.8 or above
+* Ember.js v3.13 or above
 * Ember CLI v2.13 or above
 * Node.js v8 or above
 
@@ -18,7 +18,6 @@ Installation
 ```
 ember install ember-progress-bars
 ```
-
 
 Usage
 ------------------------------------------------------------------------------

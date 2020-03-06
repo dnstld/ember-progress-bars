@@ -1,16 +1,13 @@
-import Component from '@ember/component';
-import { computed } from '@ember/object';
+import Component from '@glimmer/component';
+import { tracked } from "@glimmer/tracking";
 
-export default Component.extend({
-  tagName: '',
+export default class ProgressBarsComponent extends Component {
+  tagName = '';
 
-  secondary: false,
+  @tracked progressValue = this.args.progress || 0;
 
-  progressValue: computed('progress', function() {
-    return (100 - this.progress) || 0;
-  }),
-
-  cssProperty: computed('progressValue', function() {
-    return `transform: translateX(-${this.progressValue}%)`;
-  })
-});
+  get cssProperty() {
+    let value = (100 - this.progressValue);
+    return `transform: translateX(-${value}%)`;
+  }
+}
