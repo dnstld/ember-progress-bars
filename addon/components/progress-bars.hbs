@@ -1,15 +1,15 @@
 <div
   id="progress-bars"
   class="progress-bars"
+  ...attributes
 >
   <div
     id="progress-bars__bar"
-    class="progress-bars__bar {{if @secondary 'progress-bars__bar--secondary'}}"
+    class="progress-bars__bar {{if this.secondary 'progress-bars__bar--secondary'}}"
     role="progressbar"
     aria-valuemin="0"
     aria-valuemax="100"
-    aria-valuenow={{this.progress}}
-    style={{this.translateX}}
-    ...attributes>
+    aria-valuenow={{this.progressValue}}
+    style={{this.cssProperty}}>
   </div>
 </div>
